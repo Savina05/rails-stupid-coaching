@@ -1,0 +1,9 @@
+<h3>Coaches' Answer:</h3>
+
+<% if @message.downcase == @right_message.downcase %>
+  <h3><%= "Great!" %></h3>
+<% elsif @message.split(//).include?('?') %>
+  <h3><%= "Silly question, get dressed and go to work!" %></h3>
+<% else %>
+  <h3><%= "I don't care, get dressed and go to work!" %></h3>
+<% end %>
